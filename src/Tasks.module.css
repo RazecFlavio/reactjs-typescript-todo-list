@@ -1,0 +1,64 @@
+.task {
+  display: flex;
+  align-items: center;
+  margin-top: 0.75rem;
+  padding: 1rem;
+  gap: 0.75rem;
+  background: var(--gray-400);
+  border-radius: 8px;
+}
+.task input {
+  appearance: none;
+  --webkit-appearance: none;
+  outline: none;
+  width: 0.875rem;
+  height: 0.875rem;
+  border: 1px solid var(--blue);
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0px 0px 0.125rem 0.125rem;
+  font-size: 0.75rem;
+}
+
+.task input:hover {
+  background: var(--blue-dark);
+}
+.task input:checked {
+  background: var(--purple-dark);
+  border: 1px solid var(--purple-dark);
+}
+.task input:checked:hover {
+  background: var(--purple);
+  border: 1px solid var(--purple);
+}
+.task input:checked:before {
+  content: '\2713';
+  color: white;
+  padding: initial;
+  font-weight: bold;
+  font-size: 0.65rem;
+}
+
+.task p {
+  width: 100%;
+  color: var(--gray-100);
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+.taskChecked {
+  color: var(--gray-300);
+  text-decoration: line-through;
+}
+
+.task button {
+  background: transparent;
+  border: 0;
+  color: var(--gray-300);
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.task button:hover {
+  color: var(--danger);
+}

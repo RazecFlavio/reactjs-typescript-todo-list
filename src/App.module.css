@@ -1,0 +1,78 @@
+.wrapper {
+  width: 39.875rem;
+  margin-top: calc(0px - 1.5rem);
+  margin-right: auto;
+  margin-left: auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.wrapper form {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.wrapper form input {
+  background: var(--gray-500);
+  border: 0;
+  color: var(--gray-300);
+  border-radius: 8px;
+  padding: 1rem;
+  width: 100%;
+}
+.wrapper input:focus {
+  outline: transparent;
+  box-shadow: 0 0 0 2px var(--purple-dark);
+}
+
+.wrapper form button {
+  border: 0;
+  background: var(--blue-dark);
+  color: var(--gray-100);
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 1rem;
+  font-weight: bold;
+  gap: 8px;
+
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+.wrapper form button:hover {
+  background: var(--blue);
+}
+.content header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.created {
+  font-size: 0.875rem;
+  color: var(--blue);
+}
+.created span {
+  background: var(--gray-400);
+  border-radius: 8px;
+  margin-left: 0.5rem;
+  padding: 0.125rem 0.5rem 0.125rem 0.5rem;
+  font-size: 0.75rem;
+  color: var(--gray-200);
+}
+
+.total {
+  font-size: 0.875rem;
+  color: var(--purple);
+}
+
+.total span {
+  background: var(--gray-400);
+  border-radius: 8px;
+  margin-left: 0.5rem;
+  padding: 0.125rem 0.5rem 0.125rem 0.5rem;
+  font-size: 0.75rem;
+  color: var(--gray-200);
+}
